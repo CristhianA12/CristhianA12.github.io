@@ -1,0 +1,49 @@
+<html lang="en" dir="ltr">
+<head>
+    <link href="../estilos/estilo2.css" rel="stylesheet" type="text/css">
+  <title>Interpretación </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<h3>Interpretación abstracta </h3>
+<div>
+<br>
+Podemos interpretar estas imagenes de una manera subjetiva ya que en si no intentan ser algo real ya que es una modificacion de la realidad.
+
+En el siguiente ejemplo podemos decir que la imagen puede ser un bosque o
+algo relacionado con la naturaleza pero si vemos la imagen real no tiene ninguna conexion con la imagen original.
+</div>
+<section>
+<table border="0">
+  <tr>
+    <td>
+      <canvas id="imagen2" width="550" height="650" style="background:#778893"> </canvas</td>
+      <td>
+      <canvas id="imagen3" width="550" height="650" style="background:#778893"  ></canvas>
+      </td>
+      </tr>
+    </table>
+    <script>
+
+    var imagen2 = document.getElementById('imagen2');
+    var ctx2 = imagen2.getContext("2d");
+    var miimagen2 = new Image();
+    miimagen2.src = "../Img/8.jpg" ;
+    miimagen2.onload = function(){
+      ctx2.drawImage(miimagen2,20,20,500,600);
+    }
+      </script>
+      <script>
+
+      var imagen3 = document.getElementById('imagen3');
+      var ctx3 = imagen3.getContext("2d");
+      var miimagen3 = new Image();
+      miimagen3.src = "../Img/2.jpg" ;
+      miimagen3.onload = function(){
+        ctx3.drawImage(miimagen3,20,20,500,600);
+      }
+        </script>
+    <a href="../index.html">Volver </a>
+</section>
+</body>
+</html>

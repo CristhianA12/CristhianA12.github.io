@@ -1,0 +1,46 @@
+<html>
+<head>
+<link href="../estilos/estilo2.css" rel="stylesheet" type="text/css">
+  <title>Como se hace</title>
+</head>
+<body>
+<center><h3>&iquest;Como se hace? </h3></center>
+<div>
+Este tipo de imagenes las podemos crear usando diferentes aplicaciones en mi caso se usa la aplicacion gratuita llamada Glitch Lab.
+<br>
+Allí podemos editar imagenes simples y ponerles los efectos de distorsion que queramos es bastante completa, tambien cuenta con opcion premium que te da la oportunidad
+de tener mas formas de editar tus imagenes.
+</div>
+<br>
+<section>
+<table border="0" >
+  <tr>
+    <td>  <canvas id="imagen4" width="550" height="650" style="background:#778893"> </td>
+    <td>  <canvas id="imagen5" width="550" height="650" style="background:#778893"</td>
+  </tr>
+</table>
+</section>
+<script>
+
+var imagen4 = document.getElementById('imagen4');
+var ctx4 = imagen4.getContext("2d");
+var miimagen4 = new Image();
+miimagen4.src = "../Img/7.jpg" ;
+miimagen4.onload = function(){
+  ctx4.drawImage(miimagen4,20,20,500,600);
+}
+  </script>
+  <script>
+
+  var imagen5 = document.getElementById('imagen5');
+  var ctx5 = imagen5.getContext("2d");
+  var miimagen5 = new Image();
+  miimagen5.src = "../Img/4.jpg" ;
+  miimagen5.onload = function(){
+    ctx5.drawImage(miimagen5,20,20,500,600);
+  }
+    </script>
+
+  <a href="../index.html" >Volver</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link href="../estilos/estilo2.css" rel="stylesheet" type="text/css">
+  <title>Ejemplos</title>
+</head>
+<body>
+<center><h3>Ejemplos </h3></center>
+<table>
+  <tr>
+    <td>Ejemplo 1 </td>
+
+       <td> Ejemplo 2</td>
+     </tr>
+      <tr>
+      <td>  <canvas id="imagen1" width="550" height="650" style="background:#778893"  ></canvas>  </td>
+      <td>  <canvas id="imagen2" width="550" height="650" style="background:#778893"  ></canvas></td>
+    </tr>
+  </table>
+  <section >
+
+    <script>
+
+    var imagen1 = document.getElementById('imagen1');
+    var ctx = imagen1.getContext("2d");
+    var miimagen = new Image();
+    miimagen.src = "../Img/5.jpg" ;
+    miimagen.onload = function(){
+      ctx.drawImage(miimagen,20,20,500,600);
+    }
+      </script>
+    </section>
+    <script>
+
+    var imagen2 = document.getElementById('imagen2');
+    var ctx2 = imagen2.getContext("2d");
+    var miimagen1 = new Image();
+    miimagen1.src = "../Img/6.jpg" ;
+    miimagen1.onload = function(){
+      ctx2.drawImage(miimagen1,20,20,500,600);
+    }
+      </script>
+  <a href="../index.html">Volver </a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body{
+  font-size: 25px;
+  font-family: font-family: 'Roboto Mono', monospace;
+  color: #E7F6F2;
+
+}
+html {
+  background-color: #2C3333;
+}
+h3{
+  background-color:#395B64;
+  font-size: 35px ;
+}
+a
+{
+  color: #A5C9CA;
+  font-size: 30px;
+  text-decoration:none;
+}
+td{
+  font-size: 40px;
+font-family: 'Inconsolata', monospace;
+}
+div{
+  background-color:#A5C9CA ;
+  border: 5px solid#FFFF;
+  height: 150px;
+  margin: 20px;
+  padding: 20px;
+  width: 1000px;
+}
+canvas{
+  margin:20px; 
+}
