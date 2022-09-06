@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+      <script src="https://js.cx/libs/animate.js"></script>
     <link href="estilos/estilo.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
@@ -9,6 +10,11 @@
 
   </head>
   <body>
+      <script>
+    function ventanaSecundaria (URL){
+       window.open(URL,"Video_JS","width=500,height=500,scrollbars=NO")
+    }
+    </script>
     <center><h1>Arte Glitch </h1></center>
 <table border="0"width="90%">
   <tr>
@@ -20,8 +26,45 @@
   <tr>
 <td></td>
 <td></td>
-<td><img src="../img/1.jpg" alt="Principal" width="700" height="500"> </td>
+<td><br>
+  <center>Clickeame &darr;</center>
+  <br>
+  <div id="animacion">
+    <img id="cubo" src="../img/cubo.png" alt="Principal" width="700" height="500"> </td></div>
   </tr>
 </table>
+  <script  type="text/javascript">
+    function makeEaseOut(timing) {
+      return function(timeFraction) {
+        return 1 - timing(1 - timeFraction);
+      }
+    }
+
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+        }
+      }
+    }
+
+    cubo.onclick = function() {
+
+      let to = cubo.clientHeight - animacion.clientHeight;
+
+      animate({
+        duration: 2000,
+        timing: makeEaseOut(bounce),
+        draw(progress) {
+          cubo.style.top = to * progress + 'px'
+        }
+      });
+
+
+    };
+  </script>
+  <footer>
+  <a href="javascript:ventanaSecundaria('video/Video_ JS.mp4')" >Para ver como hice la animacion click aca </a>
+  </footer>
   </body>
 </html>
